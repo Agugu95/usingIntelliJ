@@ -1,9 +1,8 @@
 package Networking;
 
-import javafx.application.Platform;
-
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
 import java.net.InetSocketAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -35,21 +34,21 @@ public class ChatServer {
 
         // 연결 수락
         Runnable runnable = () -> {
-            Platform.runLater(() -> {
+            // Platform.runLater(() -> {
                 displayText("[서버시작]"); // 콘솔 창에 서버 시작 출력
-            });
+           // });
             while (true) {
                 try {
                     socket = serverSocket.accept(); // 연결 수락 시 소켓 생성 (블로킹)
                     String message = "[연결 수락: " + socket.getRemoteSocketAddress() + ": "
                             + Thread.currentThread().getName() + "]";
-                    Platform.runLater(() -> displayText(message));
+                   displayText(message);
 
                     // 소켓을 통해 만들어진 클라이언트 객체 저장
                     Client client = new Client(socket);
                     connections.add(client);
 
-                    Platform.runLater(()-> displayText("[연결 개수: " + connections.size() + "]"));
+                    displayText("[연결 개수: " + connections.size() + "]");
 
 
                 } catch (Exception e) {
@@ -76,9 +75,9 @@ public class ChatServer {
             if(executorService != null && !executorService.isShutdown()){
                 executorService.shutdown();
             }
-            Platform.runLater(() -> {
+           // Platform.runLater(() -> {
                 displayText("[서버멈춤]");
-            });
+            // });
         } catch (Exception e){
 
         }
@@ -105,7 +104,7 @@ public class ChatServer {
                         }
                         String message = "[요청처리: " + socket.getRemoteSocketAddress() + ": "
                                 + Thread.currentThread().getName() + "]";
-                        Platform.runLater(()->displayText(message));
+                        displayText(message);
 
                         // 문자열 디코딩
                         String data = new String(byteArr, 0, readByteCount, "UTF-8");
@@ -119,7 +118,7 @@ public class ChatServer {
                         connections.remove(Client.this); // 예외 발생 시 컬렉션에서 클라이언트 객체 제거
                         String message = "[클라이언트 통신 불가: " + socket.getRemoteSocketAddress() +
                                 ": " + Thread.currentThread().getName() + "]";
-                        Platform.runLater(()->displayText(message));
+                        displayText(message);
                         socket.close();
                     } catch (IOException e2){
 
@@ -131,19 +130,33 @@ public class ChatServer {
         void send(String data){ // 데이터 보내기
             Runnable runnable = (()-> {
                try {
-                   byte
+                   byte[] byteArr = data.getBytes("UTF-8");
+                   OutputStream os = socket.getOutputStream();
+                   os.write(byteArr);
+                   os.flush();
+               } catch (Exception e){
+                   try {
+                       String message = "[클라이언트 통신 안됨: "+ ": " +
+                               socket.getRemoteSocketAddress() + Thread.currentThread().getName() +"]";
+                        displayText(message);
+                       connections.remove(Client.this);
+                       socket.close();
+                   } catch (IOException e2){
+
+                   }
                }
             });
+            executorService.submit(runnable);
         }
-
-
     }
-
-
     ///////////////////// UI 생성
     public void displayText(String text){
         System.out.println(text + "\n");
-
     }
 
+    public static void main(String[] args) {
+        ChatServer chatServer = new ChatServer();
+        chatServer.startServer();
+    }
 }
+
