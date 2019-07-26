@@ -5,7 +5,7 @@ import java.nio.file.Paths;
 import java.util.Iterator;
 
 public class PathExample {
-    public static void main(String[] args) throws  Exception{
+    public static void main(String[] args) throws Exception{
         Path path = Paths.get("../IdeaProjects/HelloWorld/PathExample.java");
         System.out.println("[파일명] " + path.getFileName());
         System.out.println("[부모 디렉토리명]: " + path.getParent().getFileName());

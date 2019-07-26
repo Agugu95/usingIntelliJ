@@ -41,5 +41,5 @@ public class BufferedOutputStreamExample {
         end = System.currentTimeMillis();
         bos.close(); fis.close(); bis.close(); fos.close();
         System.out.println("사용 햇을 때: " + (end - start) + "ns");
-  }
+    }
 }
