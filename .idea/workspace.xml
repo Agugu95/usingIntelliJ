@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9a84c4c-9f9c-470e-a16d-c0fc1033dc44" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Networking/BufferSize.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Networking/DirectBufferCapacityExampcle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Networking/DirectoryExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Networking/FileExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Networking/FileSystemExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Networking/OSbyteOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Networking/WatchServiceExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Networking/AsyncFileChannelExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Networking/BufferExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Networking/ByteBufferConversionExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Networking/ByteBufferToIntBuffer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Networking/FileChannelCopy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Networking/FileChannelExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IOprograming/BufferedOutputStreamExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IOprograming/BufferedOutputStreamExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Networking/PathExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Networking/PathExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HelloWorld/Networking/OSbyteOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HelloWorld/Networking/OSbyteOrder.class" afterDir="false" />
     </list>
     <ignored mask="git" />
     <manually-removed-from-ignored>
@@ -32,10 +30,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Networking/PathExample.java">
+        <entry file="file://$PROJECT_DIR$/src/Networking/BufferExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="8" column="74" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="74" />
+            <state relative-caret-position="255">
+              <caret line="27" column="72" selection-start-line="27" selection-start-column="72" selection-end-line="27" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,10 +42,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Networking/FileExample.java">
+        <entry file="file://$PROJECT_DIR$/src/Networking/ByteBufferConversionExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="69" selection-start-line="8" selection-start-column="69" selection-end-line="8" selection-end-column="69" />
+            <state relative-caret-position="323">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,10 +54,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Networking/DirectoryExample.java">
+        <entry file="file://$PROJECT_DIR$/src/Networking/ByteBufferToIntBuffer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="83" selection-start-line="25" selection-start-column="83" selection-end-line="25" selection-end-column="83" />
+            <state relative-caret-position="207">
+              <caret line="22" column="80" selection-start-line="22" selection-start-column="80" selection-end-line="22" selection-end-column="80" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -68,33 +66,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Networking/WatchServiceExample.java">
+        <entry file="file://$PROJECT_DIR$/src/Networking/FileChannelExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-119">
-              <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+            <state relative-caret-position="172">
+              <caret line="34" column="67" selection-start-line="34" selection-start-column="67" selection-end-line="34" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2137#2138#0" expanded="true" />
-                <element signature="e#2156#2157#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Networking/BufferSize.java">
+        <entry file="file://$PROJECT_DIR$/src/Networking/FileChannelCopy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Networking/DirectBufferCapacityExampcle.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="107" selection-start-line="12" selection-start-column="107" selection-end-line="12" selection-end-column="107" />
+            <state relative-caret-position="240">
+              <caret line="30" column="102" selection-start-line="30" selection-start-column="102" selection-end-line="30" selection-end-column="102" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,10 +90,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Networking/OSbyteOrder.java">
+        <entry file="file://$PROJECT_DIR$/src/Networking/AsyncFileChannelExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+            <state relative-caret-position="308">
+              <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -161,6 +148,12 @@
         <option value="$PROJECT_DIR$/src/Networking/BufferSize.java" />
         <option value="$PROJECT_DIR$/src/Networking/DirectBufferCapacityExampcle.java" />
         <option value="$PROJECT_DIR$/src/Networking/OSbyteOrder.java" />
+        <option value="$PROJECT_DIR$/src/Networking/BufferExample.java" />
+        <option value="$PROJECT_DIR$/src/Networking/ByteBufferConversionExample.java" />
+        <option value="$PROJECT_DIR$/src/Networking/ByteBufferToIntBuffer.java" />
+        <option value="$PROJECT_DIR$/src/Networking/FileChannelExample.java" />
+        <option value="$PROJECT_DIR$/src/Networking/FileChannelCopy.java" />
+        <option value="$PROJECT_DIR$/src/Networking/AsyncFileChannelExample.java" />
       </list>
     </option>
   </component>
@@ -176,7 +169,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -200,6 +192,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -215,7 +208,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -229,9 +222,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.OSbyteOrder">
-    <configuration name="BufferSize" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Networking.BufferSize" />
+  <component name="RunManager" selected="Application.AsyncFileChannelExample">
+    <configuration name="AsyncFileChannelExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Networking.AsyncFileChannelExample" />
       <module name="HelloWorld" />
       <extension name="coverage">
         <pattern>
@@ -243,8 +236,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DirectBufferCapacityExampcle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Networking.DirectBufferCapacityExampcle" />
+    <configuration name="ByteBufferConversionExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Networking.ByteBufferConversionExample" />
       <module name="HelloWorld" />
       <extension name="coverage">
         <pattern>
@@ -256,8 +249,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DirectoryExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Networking.DirectoryExample" />
+    <configuration name="ByteBufferToIntBuffer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Networking.ByteBufferToIntBuffer" />
       <module name="HelloWorld" />
       <extension name="coverage">
         <pattern>
@@ -269,8 +262,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OSbyteOrder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Networking.OSbyteOrder" />
+    <configuration name="FileChannelCopy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Networking.FileChannelCopy" />
       <module name="HelloWorld" />
       <extension name="coverage">
         <pattern>
@@ -282,8 +275,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WatchServiceExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Networking.WatchServiceExample" />
+    <configuration name="FileChannelExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Networking.FileChannelExample" />
       <module name="HelloWorld" />
       <extension name="coverage">
         <pattern>
@@ -297,11 +290,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.OSbyteOrder" />
-        <item itemvalue="Application.DirectBufferCapacityExampcle" />
-        <item itemvalue="Application.BufferSize" />
-        <item itemvalue="Application.WatchServiceExample" />
-        <item itemvalue="Application.DirectoryExample" />
+        <item itemvalue="Application.AsyncFileChannelExample" />
+        <item itemvalue="Application.FileChannelCopy" />
+        <item itemvalue="Application.FileChannelExample" />
+        <item itemvalue="Application.ByteBufferToIntBuffer" />
+        <item itemvalue="Application.ByteBufferConversionExample" />
       </list>
     </recent_temporary>
   </component>
@@ -322,7 +315,9 @@
       <workItem from="1563884404260" duration="3211000" />
       <workItem from="1563951638425" duration="17611000" />
       <workItem from="1564053909480" duration="5768000" />
-      <workItem from="1564125660833" duration="8407000" />
+      <workItem from="1564125660833" duration="8505000" />
+      <workItem from="1564200341529" duration="122000" />
+      <workItem from="1564392230458" duration="12957000" />
     </task>
     <task id="LOCAL-00001" summary="umm..">
       <created>1563781476138</created>
@@ -349,7 +344,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47760000" />
+    <option name="totallyTimeSpent" value="60937000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -364,7 +359,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19288956" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19894099" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -402,6 +397,24 @@
     <MESSAGE value="umm.." />
     <MESSAGE value="[0722: IO기반 입출력 네트워킹]" />
     <option name="LAST_COMMIT_MESSAGE" value="[0722: IO기반 입출력 네트워킹]" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Networking/ByteBufferToIntBuffer.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Networking/ByteBufferToIntBuffer.java</url>
+          <line>24</line>
+          <properties />
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/out/production/HelloWorld/IOprograming/HelloJava.class">
@@ -630,7 +643,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Networking/PathExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="102">
           <caret line="8" column="74" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -640,7 +653,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Networking/FileExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state relative-caret-position="102">
           <caret line="8" column="69" selection-start-line="8" selection-start-column="69" selection-end-line="8" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -650,7 +663,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Networking/DirectoryExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
+        <state relative-caret-position="374">
           <caret line="25" column="83" selection-start-line="25" selection-start-column="83" selection-end-line="25" selection-end-column="83" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -658,22 +671,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Networking/WatchServiceExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
-          <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2137#2138#0" expanded="true" />
-            <element signature="e#2156#2157#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Networking/BufferSize.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
@@ -691,6 +692,76 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Networking/WatchServiceExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Networking/BufferExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="27" column="72" selection-start-line="27" selection-start-column="72" selection-end-line="27" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Networking/ByteBufferConversionExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Networking/ByteBufferToIntBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="22" column="80" selection-start-line="22" selection-start-column="80" selection-end-line="22" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Networking/FileChannelExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="34" column="67" selection-start-line="34" selection-start-column="67" selection-end-line="34" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Networking/FileChannelCopy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="30" column="102" selection-start-line="30" selection-start-column="102" selection-end-line="30" selection-end-column="102" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Networking/AsyncFileChannelExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
