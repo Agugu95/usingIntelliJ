@@ -12,6 +12,7 @@ import java.util.concurrent.Executors;
 public class testMainC2 {
     ExecutorService executorService = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
     SocketChannel socketChannel;
+    private static final String UTF_8 = "UTF-8";
 
     public void start(){
         // 멀티 스레딩
@@ -19,7 +20,7 @@ public class testMainC2 {
             try {
                 socketChannel = SocketChannel.open();
                 socketChannel.configureBlocking(true);
-                socketChannel.connect(new InetSocketAddress(8080));
+                socketChannel.connect(new InetSocketAddress("localhost",8080));
                 receive();
             } catch (IOException e) {
                 e.printStackTrace();
@@ -33,7 +34,7 @@ public class testMainC2 {
         Runnable runnable = () -> {
         while (true) {
             ByteBuffer byteBuffer = ByteBuffer.allocate(100);
-            Charset charset = Charset.forName("UTF-8");
+            Charset charset = Charset.forName(UTF_8);
             try {
                 int byteCount = socketChannel.read(byteBuffer);
                 if (byteCount == -1) {
@@ -59,7 +60,7 @@ public class testMainC2 {
         // 멀티 스레딩
         Runnable runnable = () -> {
             try {
-                Charset charset = Charset.forName("UTF-8");
+                Charset charset = Charset.forName(UTF_8);
                 ByteBuffer byteBuffer = charset.encode(data);
                 socketChannel.write(byteBuffer);
             } catch (Exception e){
@@ -69,7 +70,7 @@ public class testMainC2 {
         executorService.submit(runnable);
     }
     public static void main(String[] args) {
-        testMainC c = new testMainC();
+        testMainC2 c = new testMainC2();
         c.start();
         Scanner sc = new Scanner(System.in);
         String data;

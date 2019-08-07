@@ -1,23 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9a84c4c-9f9c-470e-a16d-c0fc1033dc44" name="Default Changelist" comment="[&quot;0729: 블로킹/논블로킹/비동기 TCP소켓&quot;]">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Client/ClientMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Client/ClientMain2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Client/Thread/clientSocketThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Server/Thread/ManagedClientThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Server/Thread/socketThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Server/serverMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/testMainServer/testMainC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/testMainServer/testMainC2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/testMainServer/testMainS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="b9a84c4c-9f9c-470e-a16d-c0fc1033dc44" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/nonBlockingChat/ServerMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/testMainServer/testServerRunThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/testMainServer/testServerThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HelloWorld/Networking/TCPChat/ChatServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HelloWorld/Networking/TCPChat/ChatServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HelloWorld/Networking/TCPChat/ChatServerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HelloWorld/Networking/TCPChat/ChatServerThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Networking/TCPChat/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Networking/TCPChat/ChatServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Networking/TCPChat/ChatServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Networking/TCPChat/ChatServerThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testMainServer/testMainC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testMainServer/testMainC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testMainServer/testMainC2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testMainServer/testMainC2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testMainServer/testMainS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testMainServer/testMainS.java" afterDir="false" />
     </list>
     <ignored mask="git" />
     <manually-removed-from-ignored>
@@ -37,34 +28,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/testMainServer/testMainS.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1409">
-              <caret line="10" column="44" lean-forward="true" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/testMainServer/testMainC2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="78" column="24" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/testMainServer/testMainC.java">
+        <entry file="file://$PROJECT_DIR$/src/nonBlockingChat/ServerMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1309">
-              <caret line="77" column="13" lean-forward="true" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
+            <state relative-caret-position="340">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#542#554#0" expanded="true" />
+                <element signature="e#842#843#0" expanded="true" />
+                <element signature="e#878#879#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -85,9 +58,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/IOprograming/ClassA.java" />
-        <option value="$PROJECT_DIR$/src/IOprograming/SerializableReader.java" />
-        <option value="$PROJECT_DIR$/src/IOprograming/SerializableWriter.java" />
         <option value="$PROJECT_DIR$/src/IOprograming/ClassB.java" />
         <option value="$PROJECT_DIR$/src/IOprograming/NotSerializableParent.java" />
         <option value="$PROJECT_DIR$/src/IOprograming/NonSerializableExample.java" />
@@ -133,17 +103,19 @@
         <option value="$PROJECT_DIR$/src/Client/ClientMain.java" />
         <option value="$PROJECT_DIR$/src/Client/ClientMain2.java" />
         <option value="$PROJECT_DIR$/src/Client/Thread/clientSocketThread.java" />
-        <option value="$PROJECT_DIR$/src/testMainServer/testMainS.java" />
         <option value="$PROJECT_DIR$/src/testMainServer/testMainC2.java" />
         <option value="$PROJECT_DIR$/src/testMainServer/testMainC.java" />
+        <option value="$PROJECT_DIR$/src/testMainServer/testServerRunThread.java" />
+        <option value="$PROJECT_DIR$/src/testMainServer/testServerThread.java" />
+        <option value="$PROJECT_DIR$/src/testMainServer/testMainS.java" />
+        <option value="$PROJECT_DIR$/src/nonBlockingChat/ServerMain.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="675" />
-    <option name="y" value="-8" />
-    <option name="width" value="699" />
-    <option name="height" value="744" />
+    <option name="x" value="676" />
+    <option name="width" value="697" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -151,8 +123,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -165,16 +135,12 @@
               <item name="HelloWorld" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="HelloWorld" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HelloWorld" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="testMainServer" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -204,7 +170,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.testMainC2">
+  <component name="RunManager" selected="Application.ServerMain">
     <configuration name="ClientMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Client.ClientMain" />
       <module name="HelloWorld" />
@@ -218,12 +184,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="serverMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Server.serverMain" />
+    <configuration name="ServerMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="nonBlockingChat.ServerMain" />
       <module name="HelloWorld" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Server.*" />
+          <option name="PATTERN" value="nonBlockingChat.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -272,11 +238,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.testMainC2" />
+        <item itemvalue="Application.ServerMain" />
         <item itemvalue="Application.testMainC" />
         <item itemvalue="Application.testMainS" />
+        <item itemvalue="Application.testMainC2" />
         <item itemvalue="Application.ClientMain" />
-        <item itemvalue="Application.serverMain" />
       </list>
     </recent_temporary>
   </component>
@@ -304,7 +270,9 @@
       <workItem from="1564639479269" duration="8905000" />
       <workItem from="1564670654547" duration="4801000" />
       <workItem from="1565009148680" duration="31000" />
-      <workItem from="1565075745336" duration="16477000" />
+      <workItem from="1565075745336" duration="16678000" />
+      <workItem from="1565099008526" duration="4636000" />
+      <workItem from="1565147861904" duration="7268000" />
     </task>
     <task id="LOCAL-00001" summary="umm..">
       <created>1563781476138</created>
@@ -341,11 +309,18 @@
       <option name="project" value="LOCAL" />
       <updated>1564482953470</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="채팅 만들기">
+      <created>1565092434765</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1565092434765</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104839000" />
+    <option name="totallyTimeSpent" value="116944000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -359,14 +334,15 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4987775" visible="true" weight="0.14220877" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4987775" visible="true" weight="0.1354009" />
       <window_info id="Structure" order="1" sideWeight="0.5012225" side_tool="true" weight="0.20196672" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Thumbnails" weight="0.3295082" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28951746" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -398,7 +374,8 @@
     <MESSAGE value="[0722: IO기반 입출력 네트워킹]" />
     <MESSAGE value="[0729: 버퍼 속성 및 메소드, 파일채널]" />
     <MESSAGE value="[&quot;0729: 블로킹/논블로킹/비동기 TCP소켓&quot;]" />
-    <option name="LAST_COMMIT_MESSAGE" value="[&quot;0729: 블로킹/논블로킹/비동기 TCP소켓&quot;]" />
+    <MESSAGE value="채팅 만들기" />
+    <option name="LAST_COMMIT_MESSAGE" value="채팅 만들기" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -419,53 +396,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Networking/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Networking/FileSystemExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Networking/ChatClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="79" column="34" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/IOprograming/FileInputStreamExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/IOprograming/FileOutputStreamExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Networking/UdpReciveExample.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
@@ -682,17 +612,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="1140" column="24" selection-start-line="1140" selection-start-column="24" selection-end-line="1140" selection-end-column="24" />
-          <folding>
-            <element signature="e#43969#43970#0" expanded="true" />
-            <element signature="e#43996#43997#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Networking/tcpBlockingChat/ClientExample.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -756,13 +675,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Server/Thread/socketStopThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Server/Thread/socketStopThread.java" />
     <entry file="file://$PROJECT_DIR$/src/Networking/TCPChat/ChatClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -857,17 +770,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/testMainServer/testMainS.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1409">
-          <caret line="10" column="44" lean-forward="true" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+        <state relative-caret-position="325">
+          <caret line="747" column="19" selection-start-line="747" selection-start-column="19" selection-end-line="747" selection-end-column="19" />
+          <folding>
+            <element signature="e#43969#43970#0" expanded="true" />
+            <element signature="e#43996#43997#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/testMainServer">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>testMainServer</OriginalElement>
+          <nodes>
+            <node x="" y="">testMainServer.testServerThread</node>
+            <node x="" y="">testMainServer.testMainC2</node>
+            <node x="" y="">testMainServer.testMainS</node>
+            <node x="" y="">testMainServer.testMainC</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.4032967032967036" x="257.0000000000001" y="116.82067345340639" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/testMainServer.testMainC">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>testMainServer.testMainC</OriginalElement>
+          <nodes>
+            <node x="" y="">testMainServer.testServerThread</node>
+            <node x="" y="">testMainServer.testMainC2</node>
+            <node x="" y="">testMainServer.testMainS</node>
+            <node x="" y="">testMainServer.testMainC</node>
+            <node x="" y="">testMainServer.testServerRunThread</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="131.5" y="182.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/testMainServer/testMainC2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="78" column="24" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
+        <state relative-caret-position="199">
+          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -876,10 +848,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/testMainServer/testMainC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="77" column="13" lean-forward="true" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
+        <state relative-caret-position="901">
+          <caret line="53" column="8" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testMainServer/testMainS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testMainServer/testServerRunThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-311">
+          <caret line="13" column="39" lean-forward="true" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testMainServer/testServerThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="45" column="47" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nonBlockingChat/ServerMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#542#554#0" expanded="true" />
+            <element signature="e#842#843#0" expanded="true" />
+            <element signature="e#878#879#0" expanded="true" />
           </folding>
         </state>
       </provider>

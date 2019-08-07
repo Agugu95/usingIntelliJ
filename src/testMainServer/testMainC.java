@@ -10,15 +10,16 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class testMainC {
-    ExecutorService executorService = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
-    SocketChannel socketChannel;
+    private static final ExecutorService executorService = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
+    private static SocketChannel socketChannel;
+    private static final String UTF_8 = "UTF-8";
 
     public void start(){
         Runnable runnable = ()-> {
             try {
                 socketChannel = SocketChannel.open();
                 socketChannel.configureBlocking(true);
-                socketChannel.connect(new InetSocketAddress(8080));
+                socketChannel.connect(new InetSocketAddress("localhost",8080));
                 receive();
             } catch (IOException e) {
                 e.printStackTrace();
@@ -27,11 +28,11 @@ public class testMainC {
         executorService.submit(runnable);
     }
 
-    public void receive(){
-        // Runnable runnable = () -> {
+    private void receive(){
+        Runnable runnable = () -> {
             while (true) {
                 ByteBuffer byteBuffer = ByteBuffer.allocate(100);
-                Charset charset = Charset.forName("UTF-8");
+                Charset charset = Charset.forName(UTF_8);
                 try {
                     int byteCount = socketChannel.read(byteBuffer);
                     if (byteCount == -1) {
@@ -49,14 +50,14 @@ public class testMainC {
                     e.printStackTrace();
                 }
             }
-        //};
-        //executorService.submit(runnable);
+        };
+        executorService.submit(runnable);
     }
 
-    public void send(String data){
+    private void send(String data){
         Runnable runnable = () -> {
             try {
-                Charset charset = Charset.forName("UTF-8");
+                Charset charset = Charset.forName(UTF_8);
                 ByteBuffer byteBuffer = charset.encode(data);
                 socketChannel.write(byteBuffer);
             } catch (Exception e){
